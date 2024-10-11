@@ -12,19 +12,31 @@
             background-color: pink;
             color: white;
         }
+        #chatbot-container {
+            width: 300px;
+            height: 400px;
+            border: 2px solid #ccc;
+            margin: 20px auto;
+        }
     </style>
 </head>
 <body>
     <h1>Hello, Khonkamon Wongchanglor</h1>
     <img src="https://c4.wallpaperflare.com/wallpaper/181/179/710/cat-mammal-dandelion-flower-wallpaper-preview.jpg" alt="Cat and Dandelion">
-      
+
+    <div id="chatbot-container"></div>
     
     <script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "126abcf9-4219-4a4e-8300-dfede0ca2d4d",
-        apiHost: "https://flowiseai-yt-954z.onrender.com",
-    })
-</script>
+        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+
+        document.addEventListener("DOMContentLoaded", function() {
+            Chatbot.init({
+                chatflowid: "126abcf9-4219-4a4e-8300-dfede0ca2d4d",
+                apiHost: "https://flowiseai-yt-954z.onrender.com",
+                apiKey: "E6ZQwsE-fjbEo0Vfr3o2mRnmh6_17lklMgD8k27X-T4", // Include your API key
+                container: document.getElementById("chatbot-container")
+            });
+        });
+    </script>
 </body>
 </html>
