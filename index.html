@@ -17,17 +17,15 @@
 <body>
     <h1>Hello, Khonkamon Wongchanglor</h1>
     <img src="https://c4.wallpaperflare.com/wallpaper/181/179/710/cat-mammal-dandelion-flower-wallpaper-preview.jpg" alt="Cat and Dandelion">
-       <div id="chatbot-container"></div> <!-- Container for the chatbot -->
-    
-    <!-- Import the chatbot script -->
+      <div id="chatbot-container"></div> 
     <script type="module">
         import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
         
         document.addEventListener("DOMContentLoaded", function() {
-            // Initialize the chatbot with specific chatflow ID and API host
             Chatbot.init({
-                chatflowid: "126abcf9-4219-4a4e-8300-dfede0ca2d4d", // Flow ID for your chatbot
-                apiHost: "https://flowiseai-yt-954z.onrender.com",  // API host for Flowise
+                chatflowid: "126abcf9-4219-4a4e-8300-dfede0ca2d4d",
+                apiHost: "https://flowiseai-yt-954z.onrender.com",  
+                container: document.getElementById("chatbot-container") 
             });
         });
     </script>
