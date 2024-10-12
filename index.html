@@ -3,56 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>User Name</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: LightYellow ; /* Set the background color for the entire body */
-            margin: 0; /* Remove default margin */
-            height: 100vh; /* Ensure the body takes up the full viewport height */
-        }
-        h1 {
-            color: LightSkyBlue;
-            font-size: 5em; 
-        }
-        h2 {
-            color: LightSkyBlue;
-            font-size: 4em; 
-        }
-        h3 {
-            color: AliceBlue;
-            font-size: 2.5em; 
-        }
-        h4 {
-            color: wheat;
-            font-size: 3em; 
-        }
-    </style>
+    <title>Sunshine Sunscreen</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-    <h1>WELCOME TO</h1>
-    <h2>Sunshine Sunscreen</h2>
-    <h3>(SunProtect Sensitive)</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUzFnDKq2pFCX7C_g439xLCiu29GQfL1B-jw&usqp=CAU.png" alt="Person applying sunscreen" width="1000" height="1000">
-    <h4>ข้อมูลผลิตภัณฑ์</h4>
-<script type="module">
-    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
-    Chatbot.init({
-        chatflowid: "2c3b4b96-bf78-44e5-ace2-51d059023694",
-        apiHost: "https://butterfuay-flowise-1.hf.space",
-        theme: {
-            chatWindow: {
-                botMessage: {
-                    textColor: "navy",  // Set bot message text to green
-                    avatarSrc: "https://images.app.goo.gl/6r5453omehGVfQHf7" // Set bot avatar
-                },
-                userMessage: {
-                    textColor: "white",  // Set user message text to white
-                    avatarSrc: "https://images.app.goo.gl/ARz465cEu1T9t7Kw7" // Set user avatar
-                }
-            }
-        }
-    })
-</script>
+
+    <div class="menubar">
+        <div class="container">
+            <div class="logo">
+                <h1>MyComp</h1>
+            </div>
+            <ul class="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+    <header class="header">
+        <div class="container">
+            <div class="header_area">
+                <h1>Welcome to my office</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+            </div>
+        </div>
+    </header>
+
+    <section class="info1">
+        <div class="container">
+            <div class="info1_area">
+                <img src="img/pic1.png" alt="">
+                <div class="info1_text">
+                    <h1>We working with performance</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="info2">
+        <div class="container">
+            <div class="info2_area">
+                <div class="info2_text">
+                    <h1>We working with performance</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the</p>
+                </div>
+                <img src="img/pic2.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="clearfix"></div>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact_area">
+                <h1>Contact Us</h1>
+                <form>
+                    <label>Your Name</label><br>
+                    <input type="text" placeholder="Your Name"><br>
+                    <label>Your Email</label><br>
+                    <input type="email" placeholder="Your Email"><br>
+                    <label>Your Subject</label><br>
+                    <input type="text" placeholder="Your Subject"><br>
+                    <label>Your Message</label><br>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea><br>
+                    <button>send</button><br>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>Copyright &copy; 2017 | YourName</p>
+    </footer>
 </body>
 </html>
