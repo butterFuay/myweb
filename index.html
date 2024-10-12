@@ -12,34 +12,46 @@
             background-color: pink;
             color: white;
         }
-        .flowise-chat-bubble {
-            background-color: #00FFC3 !important; 
-        }
-        .flowise-chat-input::before {
-            content: url('https://images.app.goo.gl/6GfyS8gzmUDjkG6u8'); 
-            position: absolute;
-            left: 10px;
-            top: 10px;
-        }
     </style>
 </head>
 <body>
     <h1>Hello, Khonkamon Wongchanglor</h1>
     <img src="https://c4.wallpaperflare.com/wallpaper/181/179/710/cat-mammal-dandelion-flower-wallpaper-preview.jpg" alt="Cat and Dandelion">
     
-    <!-- Container for chatbot -->
-    <div id="chatbot-container"></div>
-
     <script type="module">
-        import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
 
-        document.addEventListener("DOMContentLoaded", function() {
-            Chatbot.init({
-                chatflowid: "2c3b4b96-bf78-44e5-ace2-51d059023694",
-                apiHost: "https://butterfuay-flowise-1.hf.space",
-                container: document.getElementById("chatbot-container") // Specify the container
-            });
+    document.addEventListener("DOMContentLoaded", function() {
+        // Initialize the chatbot
+        Chatbot.init({
+            chatflowid: "2c3b4b96-bf78-44e5-ace2-51d059023694",
+            apiHost: "https://butterfuay-flowise-1.hf.space",
+            container: document.getElementById("chatbot-container")
         });
-    </script>
+    });
+</script>
+
+<style>
+    #chatbot-container {
+        background-color: #f1f1f1; 
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+    }
+
+    .chatbot-icon {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+
+    .flowise-chat-bubble {
+        background-color: #ffcccb !important; 
+    }
+</style>
+
+<div id="chatbot-container">
+    <img class="chatbot-icon" src="https://images.app.goo.gl/fi3NaXh7k1Qbd6dNA://example.com/chatbot-icon.png" alt="Chatbot Icon">
+</div>
 </body>
 </html>
