@@ -9,63 +9,72 @@
             text-align: center;
             background-color: LightYellow;
             margin: 0;
-            height: 100vh;
+            padding: 20px; /* Add padding for spacing from the edges */
+        }
+        .container {
+            max-width: 1200px; /* Limit the width of content */
+            margin: 0 auto; /* Center the content */
+            padding: 20px; /* Additional padding */
+            background-color: white; /* Optional: background for readability */
+        }
+        h1, h2, h3 {
+            color: LightSkyBlue;
         }
         h1 {
-            color: LightSkyBlue;
-            font-size: 5em; 
-        }
-        h2 {
-            color: LightSkyBlue;
             font-size: 4em; 
         }
+        h2 {
+            font-size: 3em; 
+        }
         h3 {
-            color: PowderBlue;
-            font-size: 2.5em; 
+            font-size: 2em; 
         }
         h4, h6, h7, h9, h11, h13, h14, h16 {
             color: wheat;
             font-size: 1.5em;
             text-align: left; 
-            margin: 1;
         }
         h5, h8, h10, h12, h15 {
-        color: wheat;
-        font-size: 2em; 
-        text-align: left; 
-        font-weight: bold;
-        margin: 1;
+            color: wheat;
+            font-size: 1.8em; 
+            text-align: left; 
+            font-weight: bold;
         }
-        
+        img {
+            max-width: 100%; /* Make image responsive */
+            height: auto;
+        }
     </style>
 </head>
 <body>
-    <h1>WELCOME TO</h1>
-    <h2>Sunshine Sunscreen</h2>
-    <h3>(SunProtect Sensitive)</h3>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUzFnDKq2pFCX7C_g439xLCiu29GQfL1B-jw&usqp=CAU.png" alt="Person applying sunscreen" width="1000" height="1000">
-    <h4>ผลิตภัณฑ์ชื่อว่า Sunshine (Sun Protect Sensitive)...</h4>
-    <h5>ราคา</h5>
-    <h6><p>ขนาด 30 กรัม ราคา 399 บาท</p> 
-        <p>ขนาด 50 กรัม ราคา 599 บาท</p></h6>
-    <h7><p>ปกป้องผิวจากแสงแดด ป้องกันการเกิดฝ้า กระและจุดด่างดำ รวมถึงช่วยลดการอักเสบของผิวทำให้ผิวชุ่มชื้น</p>
-        <p>หากเกิดอาการแพ้ เช่น ผิวแดง คัน ให้หยุดใช้ทันที และปรึกษาแพทย์ผิวหนัง</p></h7>
-    <h8>วิธีการใช้งาน<h/8>
-    <h9><p>ทาก่อนออกแดดประมาณ 15-20 นาที</p>
-        <p>ทาซ้ำทุก 2 ชั่วโมง หรือหลังจากออกกำลังกายหรือว่ายน้ำ</p></h9>
-    <h10>สามารถหาซื้อได้ตาช่องทางนี้<h/10>
-    <h11><p>1.ร้านขายเครื่องสำอางชั้นนำ (Beauty Buffet, EVEANDBOY)</p>
-        <p>2.ห้างสรรพสินค้า (Central, Robinson)</p>
-        <p>3.ช่องทางออนไลน์ (เว็บไซต์ของแบรนด์, Shopee, Lazada)</p></h11>
-    <h12>โปรโมชั่น<h/12>
-    <h13><p>ซื้อ 1 แถม 1 สำหรับลูกค้า 100 ท่านแรก</p>
-        <p>ลดราคา 20% เมื่อซื้อครบ 500 บาท</p><h/13>
-    <h14><p>โปรโมชั่นช่วงสิ้นเดือน</p>
-     <p>แถมตัวอย่างผลิตภัณฑ์บำรุงผิว เมื่อซื้อ Sunshine (Sun Protect Sensitive)</p></h14>
-    <h15>Accessories อื่นๆที่สามารถซื้อเพิ่มเติมได้<h/15>
-    <h16><p>โลชั่นบำรุงผิว : ช่วยให้ผิวชุ่มชื้น</p>
-        <p>มาร์คหน้า : ช่วยปลอบประโลมผิว</p></h16>
-    
+    <div class="container">
+        <h1>WELCOME TO</h1>
+        <h2>Sunshine Sunscreen</h2>
+        <h3>(SunProtect Sensitive)</h3>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUzFnDKq2pFCX7C_g439xLCiu29GQfL1B-jw&usqp=CAU.png" alt="Person applying sunscreen">
+        <h4>ผลิตภัณฑ์ชื่อว่า Sunshine (Sun Protect Sensitive)...</h4>
+        <h5>ราคา</h5>
+        <h6><p>ขนาด 30 กรัม ราคา 399 บาท</p> 
+            <p>ขนาด 50 กรัม ราคา 599 บาท</p></h6>
+        <h7><p>ปกป้องผิวจากแสงแดด ป้องกันการเกิดฝ้า กระและจุดด่างดำ รวมถึงช่วยลดการอักเสบของผิวทำให้ผิวชุ่มชื้น</p>
+            <p>หากเกิดอาการแพ้ เช่น ผิวแดง คัน ให้หยุดใช้ทันที และปรึกษาแพทย์ผิวหนัง</p></h7>
+        <h8>วิธีการใช้งาน</h8>
+        <h9><p>ทาก่อนออกแดดประมาณ 15-20 นาที</p>
+            <p>ทาซ้ำทุก 2 ชั่วโมง หรือหลังจากออกกำลังกายหรือว่ายน้ำ</p></h9>
+        <h10>สามารถหาซื้อได้ตามช่องทางนี้</h10>
+        <h11><p>1. ร้านขายเครื่องสำอางชั้นนำ (Beauty Buffet, EVEANDBOY)</p>
+            <p>2. ห้างสรรพสินค้า (Central, Robinson)</p>
+            <p>3. ช่องทางออนไลน์ (เว็บไซต์ของแบรนด์, Shopee, Lazada)</p></h11>
+        <h12>โปรโมชั่น</h12>
+        <h13><p>ซื้อ 1 แถม 1 สำหรับลูกค้า 100 ท่านแรก</p>
+            <p>ลดราคา 20% เมื่อซื้อครบ 500 บาท</p></h13>
+        <h14><p>โปรโมชั่นช่วงสิ้นเดือน</p>
+         <p>แถมตัวอย่างผลิตภัณฑ์บำรุงผิว เมื่อซื้อ Sunshine (Sun Protect Sensitive)</p></h14>
+        <h15>Accessories อื่นๆที่สามารถซื้อเพิ่มเติมได้</h15>
+        <h16><p>โลชั่นบำรุงผิว : ช่วยให้ผิวชุ่มชื้น</p>
+            <p>มาร์คหน้า : ช่วยปลอบประโลมผิว</p></h16>
+    </div>
+
 <script type="module">
     import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js"
     Chatbot.init({
@@ -74,10 +83,12 @@
         theme: {
             chatWindow: {
                 botMessage: {
-                    textColor: "navy",  
+                    textColor: "navy", 
+                    avatarSrc: "https://images.app.goo.gl/6r5453omehGVfQHf7"
                 },
                 userMessage: {
                     textColor: "white",  
+                    avatarSrc: "https://images.app.goo.gl/ARz465cEu1T9t7Kw7"
                 }
             }
         }
